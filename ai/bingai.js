@@ -6,7 +6,7 @@ module.exports = function(app) {
 
 async function fetchContent(content) {
   try {
-    const response = await axios.post('https://widipe.com/bingai?text=', { content });
+    const response = await axios.post('https://search.lepton.run/api/query', { content });
     return response.data;
   } catch (error) {
     console.error("Error fetching content from bingai:", error);
