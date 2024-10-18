@@ -28,6 +28,7 @@ require('./search/ypia')(app);
 require('./search/rumaysho')(app);
 require('./search/surah')(app);
 require('./search/jadwalsholat')(app);
+require('./api/tnyim')(app);
 
 // Full Kode Di Github Saya : https://github.com/Lenwyy/
 
