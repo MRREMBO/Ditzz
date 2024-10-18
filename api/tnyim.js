@@ -17,7 +17,7 @@ app.get('/tnyim', async (req, res) => {
       if (!text) {
         return res.status(400).json({ error: 'Parameter "text" Tidak Ditemukan, Tolong Masukkan Perintah' });
       }
-      const response = await fetchContent(text);
+      const response = await tnyim(text);
       res.status(200).json({
         status: 200,
         creator: "Ditzz",
