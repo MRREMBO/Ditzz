@@ -30,7 +30,7 @@ app.get('/hentaitv', async (req, res) => {
     }
 
     try {
-        const results = await hentaitv(search);
+        const results = await HentaiTv(search);
         res.status(200).json(results);
     } catch (error) {
         res.status(500).json({ error: 'Error fetching book data' });
