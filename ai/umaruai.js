@@ -1,5 +1,7 @@
 const axios = require('axios');
+
 module.exports = function(app) {
+    
     async function umaruai(text, m) {
         try {
             const headers = {
@@ -43,7 +45,7 @@ module.exports = function(app) {
     }
 
     try {
-        const results = await umaruai(text);
+        const results = await umaruai(text, m);
         res.status(200).json(results);
     } catch (error) {
         res.status(500).json({ error: 'Error fetching book data' });
