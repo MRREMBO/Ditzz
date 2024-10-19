@@ -31,6 +31,7 @@ require('./search/jadwalsholat')(app);
 require('./api/tnyim')(app);
 require('./ai/bingai')(app);
 require('./search/hentaitv')(app);
+require('./ai/umaruai')(app);
 
 // Full Kode Di Github Saya : https://github.com/Lenwyy/
 
