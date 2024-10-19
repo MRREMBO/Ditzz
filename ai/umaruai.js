@@ -38,12 +38,12 @@ module.exports = function(app) {
     }
     app.get('/umaruai', async (req, res) => {
     const { text } = req.query;
-    if (!search) {
+    if (!text) {
         return res.status(400).json({ error: ' parameter is required' });
     }
 
     try {
-        const results = await umaruai(search);
+        const results = await umaruai(text);
         res.status(200).json(results);
     } catch (error) {
         res.status(500).json({ error: 'Error fetching book data' });
