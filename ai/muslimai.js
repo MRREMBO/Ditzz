@@ -7,8 +7,7 @@ const headers = {
   'user-agent': 'Postify/1.0.0'
 };
 
-const muslimai = {
-    async function(query) {
+    async function muslimai(query) {
     try {
       const cari = await axios.post('https://www.muslimai.io/api/search', { query }, { headers });
       const passages = cari.data.map(result => result.content).join("\\n\\n");
