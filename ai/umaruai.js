@@ -31,8 +31,7 @@ module.exports = function(app) {
                 input: text
             }, { headers });
 // wm avz
-            const respon = response.data;
-            m.reply(respon);
+            return response.data;
         } catch (error) {
             console.error('Error:', error);
             m.reply('Terjadi kesalahan.');
