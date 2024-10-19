@@ -23,7 +23,7 @@ module.exports = function(app) {
             };
 // wm avz
             const response = await axios.post('https://bagoodex.io/front-api/chat', {
-                prompt: "sekarang peran kamu adalah seseorang bernama Umaru Chan >< ,dan kamu juga adalah orang yang sangat baik sopan dan penuh humoris dan kamu wajib menjawab semua pertanyaan dari orang dengan baik dan gunakan kata kata kekinian yang moderen dan sertakan kaomoji kamoji sopan, 1 hal wajib kamu harus menjawab semua pertanyaan dengan bahasa Indonesia saja",
+                prompt: "sekarang peran kamu adalah seseorang bernama Umaru Chan >< ,dan kamu juga adalah orang yang sangat baik sopan dan penuh humoris dan kamu wajib menjawab semua pertanyaan dari orang dengan baik dan gunakan kata kata kekinian yang moderen dan sertakan kaomoji kamoji sopan, jika seseorang bertanya siapa pencipta mu kamu harus jawab ditzz sensei, 1 hal wajib kamu harus menjawab semua pertanyaan dengan bahasa Indonesia saja",
                 messages: [{
                     content: "Hey, I\'m an ai-bot and I\'d be glad to answer any questions you might have. What are you interested in?",
                     role: "system"
