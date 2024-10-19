@@ -1,6 +1,6 @@
-module.exports = function(app) {
-    const axios = require('axios');
 
+    const axios = require('axios');
+module.exports = function(app) {
 const headers = {
   'authority': 'www.muslimai.io',
   'content-type': 'application/json',
@@ -19,10 +19,10 @@ const muslimai = {
 
     }
                     const respon = response.data;
-            m
+            
         } catch (error) {
             console.error('Error:', error);
-            m.reply('Terjadi kesalahan.');
+        
         }
 
       }
