@@ -17,7 +17,7 @@ const muslimai = {
         prompt: `Use the following passages to answer the query to the best of your ability as a world class expert in the Quran. Do not mention that you were provided any passages in your answer in Indonesian: ${query} \\n\\n${passages}`
       }, { headers });
 
-    } const chatResponse = await api.post('/chat', chatData);
+    } return response.data;
         return chatResponse.data;
       } catch (error) {
         console.error('Error:', error);
