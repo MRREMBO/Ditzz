@@ -8,7 +8,7 @@ const headers = {
 };
 
 const muslimai = {
-  search: async function(query) {
+    async function(query) {
     try {
       const cari = await axios.post('https://www.muslimai.io/api/search', { query }, { headers });
       const passages = cari.data.map(result => result.content).join("\\n\\n");
@@ -17,7 +17,7 @@ const muslimai = {
         prompt: `Use the following passages to answer the query to the best of your ability as a world class expert in the Quran. Do not mention that you were provided any passages in your answer in Indonesian: ${query} \\n\\n${passages}`
       }, { headers });
 
-    } return response.data;
+    }
         return chatResponse.data;
       } catch (error) {
         console.error('Error:', error);
