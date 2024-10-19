@@ -18,10 +18,13 @@ const muslimai = {
       }, { headers });
 
     }
-        return chatResponse.data;
-      } catch (error) {
-        console.error('Error:', error);
-        throw error;
+                    const respon = response.data;
+            m
+        } catch (error) {
+            console.error('Error:', error);
+            m.reply('Terjadi kesalahan.');
+        }
+
       }
     }
   
