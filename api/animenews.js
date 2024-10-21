@@ -42,13 +42,13 @@ async function animeNews() {
   }
 }
 app.get('/animenews', async (req, res) => {
-    const { search } = req.query;
-    if (!search) {
+    const { text } = req.query;
+    if (!text) {
         return res.status(400).json({ error: 'search parameter is required' });
     }
 
     try {
-        const results = await animeNews(search);
+        const results = await animeNews();
         res.status(200).json(results);
     } catch (error) {
         res.status(500).json({ error: 'Error fetching book data' });
