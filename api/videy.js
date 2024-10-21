@@ -35,7 +35,7 @@ h		}
 
 }
 
-app.get('/videydl', async (req, res) => {
+app.get('/videyld', async (req, res) => {
       try {
         const { text } = req.query;
         if (!text) {
