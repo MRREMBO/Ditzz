@@ -11,8 +11,8 @@ async function animeNews() {
 
     const pukimak = [];
     const babiq = {
-      name: "Zaenishi",
-      website: "https://zaenishi.xyz"
+      name: "Ditzz",
+      website: "https://ditzz-api2.vercel.app"
     };
 
     pukimak.push({ creator: babiq, totalBerita: anjay.length });
