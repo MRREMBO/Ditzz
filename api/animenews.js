@@ -48,7 +48,7 @@ app.get('/animenews', async (req, res) => {
     }
 
     try {
-        const results = await animenews(search);
+        const results = await animeNews(search);
         res.status(200).json(results);
     } catch (error) {
         res.status(500).json({ error: 'Error fetching book data' });
