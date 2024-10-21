@@ -33,6 +33,8 @@ require('./ai/bingai')(app);
 require('./search/hentaitv')(app);
 require('./ai/umaruai')(app);
 require('./api/ytdl')(app);
+require('./api/videy')(app);
+
 
 // Full Kode Di Github Saya : https://github.com/Lenwyy/
 
