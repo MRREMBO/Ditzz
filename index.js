@@ -35,7 +35,7 @@ require('./ai/umaruai')(app);
 require('./api/ytdl')(app);
 require('./api/videy')(app);
 require('./api/animenews')(app);
-require('./api/airamah')(app);
+require('./ai/airamah')(app);
 
 
 
