@@ -35,6 +35,8 @@ require('./ai/umaruai')(app);
 require('./api/ytdl')(app);
 require('./api/videy')(app);
 require('./api/animenews')(app);
+require('./api/airamah')(app);
+
 
 
 // Full Kode Di Github Saya : https://github.com/Lenwyy/
