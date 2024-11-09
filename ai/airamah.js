@@ -1,6 +1,6 @@
+const axios = require('axios');
 module.exports = function(app) {
 
-const axios = require('axios');
 
 async function fetchContent(content) {
     try {
