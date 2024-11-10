@@ -26,6 +26,22 @@ async function gpt4o(options) {
           contentType: "application/json",
           Authorization: "Bearer UFkOfJaclj61OxoD7MnQknU1S2XwNdXMuSZA+EZGLkc="
         }
+      }).then(res => {
+        const data = res.data;
+        if(!data.success) reject("failed get response!");
+        resolve({
+          success: true,
+          answer: data.message
+        })
+      }).catch(reject)
+    })
+  } catch (e) {
+    return {
+      success: false,
+      errors: [e]
+    }
+  }
+}
 app.get('/gpt4o', async (req, res) => {
     try {
       const { text } = req.query;
