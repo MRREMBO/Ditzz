@@ -49,7 +49,7 @@ app.get('/spotifydl', async (req, res) => {
         if (!text) {
           return res.status(400).json({ error: 'Parameter "url" tidak ditemukan.' });
         }
-        const response = await spotifydl(data);
+        const response = await spotifydl(text);
         res.status(200).json({
           status: 200,
           creator: "Ditzz",
