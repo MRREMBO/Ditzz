@@ -36,6 +36,7 @@ require('./api/ytdl')(app);
 require('./api/videy')(app);
 require('./api/animenews')(app);
 require('./ai/airamah')(app);
+require('./api/spotifydl')(app);
 
 
 
