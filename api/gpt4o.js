@@ -32,13 +32,7 @@ async function gpt4o(options) {
         resolve({
           success: true,
           answer: data.message
-        })
-      }).catch(reject)
-    })
-  } catch (e) {
-    return {
-      success: false,
-      errors: [e]
+        
     }
   }
 }
