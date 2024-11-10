@@ -32,7 +32,13 @@ async function gpt4o(options) {
         resolve({
           success: true,
           answer: data.message
-        
+        })
+      }).catch(reject)
+    })
+  } catch (e) {
+    return {
+      success: false,
+      errors: [e]
     }
   }
 }
@@ -46,7 +52,7 @@ app.get('/gpt4o', async (req, res) => {
       res.status(200).json({
         status: 200,
         creator: "Ditzz",
-        data: response
+        data: message
       });
     } catch (error) {
       res.status(500).json({ error: error.message });
