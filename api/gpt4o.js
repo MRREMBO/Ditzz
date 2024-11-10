@@ -52,7 +52,7 @@ app.get('/gpt4o', async (req, res) => {
       res.status(200).json({
         status: 200,
         creator: "Ditzz",
-        data: message
+        data: response
       });
     } catch (error) {
       res.status(500).json({ error: error.message });
