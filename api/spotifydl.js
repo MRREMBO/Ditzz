@@ -1,5 +1,5 @@
-module.exports = function(app) {
 const axios = require('axios');
+module.exports = function(app) {
 
 async function getToken() {
   try {
