@@ -29,7 +29,7 @@ app.get('/ytdl', async (req, res) => {
         }
         const response = await ytdl(text);
              res.status(200).json({
-          status: 200,
+          status: true,
           creator: "Ditzz",
           result: response,
         });
