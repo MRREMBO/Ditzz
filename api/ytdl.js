@@ -28,8 +28,9 @@ app.get('/ytdl', async (req, res) => {
           return res.status(400).json({ error: 'Parameter "url" tidak ditemukan.' });
         }
         const response = await ytdl(text);
-      } catch (error) {
-        res.status(500).json({ error: error.message });
-      }
-    });
-  };
+      res.status(200).json(results);
+    } catch (error) {
+        res.status(500).json({ error: 'Error fetching book data' });
+    }
+});
+};
