@@ -14,6 +14,7 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "node-fetch": "*",
-    "cheerio": "*"
+    "cheerio": "*",
+    "from-data": "^4.0.1"
   }
 }
