@@ -65,7 +65,7 @@ async function ytdl2(query) {
 app.get('/ytdl2', async (req, res) => {
       try {
         const { url } = req.query;
-        if (!text) {
+        if (!url) {
           return res.status(400).json({ error: 'Parameter "url" tidak ditemukan.' });
         }
         const response = await ytdl2(data);
