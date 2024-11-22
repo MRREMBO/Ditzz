@@ -68,7 +68,7 @@ app.get('/ytdl2', async (req, res) => {
         if (!text) {
           return res.status(400).json({ error: 'Parameter "url" tidak ditemukan.' });
         }
-        const response = await ytdl2(text);
+        const response = await ytdl2(data);
              res.status(200).json({
           status: true,
           creator: "Ditzz",
