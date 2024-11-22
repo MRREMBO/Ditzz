@@ -2,7 +2,9 @@ const FormData = require('form-data');
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-async function ytdl(query) {
+module.exports = function(app) {
+ 
+async function ytdl2(query) {
  const form = new FormData();
  form.append('query', query);
 
@@ -60,6 +62,21 @@ async function ytdl(query) {
  console.log('Error:' + error);
  }
 }
-
-module.exports = { ytdl };
-```
+app.get('/ytdl2', async (req, res) => {
+      try {
+        const { text } = req.query;
+        if (!text) {
+          return res.status(400).json({ error: 'Parameter "url" tidak ditemukan.' });
+        }
+        const response = await ytdl2(text);
+             res.status(200).json({
+          status: true,
+          creator: "Ditzz",
+          result: response,
+        });
+      } catch (error) {
+        res.status(500).json({ error: error.message });
+      }
+    });
+  };
+    
