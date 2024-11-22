@@ -72,7 +72,7 @@ app.get('/ytdl2', async (req, res) => {
              res.status(200).json({
           status: true,
           creator: "Ditzz",
-          result: response,
+          data: response,
         });
       } catch (error) {
         res.status(500).json({ error: error.message });
