@@ -29,7 +29,8 @@ app.get('/ytdl', async (req, res) => {
         }
         const response = await ytdl(text);
              res.status(200).json({
-          status: true
+          status: true,
+         data: response
         });
       } catch (error) {
         res.status(500).json({ error: error.message });
