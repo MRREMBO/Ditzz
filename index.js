@@ -38,6 +38,7 @@ require('./api/animenews')(app);
 require('./ai/airamah')(app);
 require('./api/spotifydl')(app);
 require('./api/gpt4o')(app);
+require('./api/ytdl-api')(app);
 
 
 
